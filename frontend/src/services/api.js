@@ -5,7 +5,7 @@ import axios from 'axios';
  * Automatically attaches JWT token to every request.
  */
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://finora-fb9t.onrender.com/api',
   timeout: 15000,
 });
 
