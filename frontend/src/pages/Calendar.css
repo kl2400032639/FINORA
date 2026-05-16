@@ -1,0 +1,99 @@
+.calendar-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px !important;
+}
+
+.calendar-container {
+  padding: 24px;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 12px;
+}
+
+.calendar-header-cell {
+  text-align: right;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.calendar-cell {
+  min-height: 110px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.calendar-cell:hover:not(.empty) {
+  border-color: #d0dae8;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.calendar-cell.empty {
+  background: transparent;
+  border-color: transparent;
+}
+
+.calendar-cell.today {
+  border: 2px solid var(--accent-primary);
+}
+
+.cell-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+
+.calendar-cell.today .cell-date {
+  color: #fff;
+  background: var(--accent-primary);
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.cell-amount {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.8);
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: right;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Heatmap intensities - Pastel soft colors */
+.heatmap-low { background: #edf9f3; border-color: #d6f2e4; }
+.heatmap-medium { background: #fef7e7; border-color: #fbeed2; }
+.heatmap-high { background: #feefef; border-color: #fce2e2; }
+
+@media (max-width: 768px) {
+  .calendar-cell { min-height: 70px; padding: 6px; }
+  .cell-amount { font-size: 11px; padding: 2px 4px; }
+  .cell-date { font-size: 13px; }
+}
