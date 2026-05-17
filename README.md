@@ -2,25 +2,31 @@
 
 A premium, full-stack Expense Management SaaS built with the MERN stack (MongoDB, Express, React, Node.js).
 
-## 🚀 Features
+## Live Demo
+https://finora-frontend.netlify.app
+## Demo Account
+Email: demo@finora.com
+Password: demo123
+
+##  Features
 - **Secure Authentication**: JWT-based login/signup with route protection.
 - **Dynamic Dashboard**: Financial overview, monthly budget tracking, and real-time balance.
 - **Expense Tracking**: Add, edit, delete, and categorize expenses.
 - **AI Insights**: Rule-based smart spending insights based on past history.
 - **Modern UI/UX**: Dark mode by default, glassmorphism UI, responsive design.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend**: React (Vite), React Router, Axios, CSS Modules (Custom Design System)
 - **Backend**: Node.js, Express, Mongoose, JWT Auth, Multer
 - **Database**: MongoDB
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 - [Node.js](https://nodejs.org/) installed
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community) installed and running locally on port 27017.
 
-### 2. Backend Setup
+###  Backend Setup
 1. Open a terminal and navigate to the backend folder:
    ```bash
    cd finora-v2/backend
@@ -34,7 +40,7 @@ A premium, full-stack Expense Management SaaS built with the MERN stack (MongoDB
    npm run dev
    ```
 
-### 3. Frontend Setup
+###  Frontend Setup
 1. Open a new terminal and navigate to the frontend folder:
    ```bash
    cd finora-v2/frontend
@@ -49,7 +55,7 @@ A premium, full-stack Expense Management SaaS built with the MERN stack (MongoDB
    ```
 4. Open your browser and go to `http://localhost:5173`
 
-## 📚 API Documentation (Local)
+## API Documentation (Local)
 - `POST /api/auth/signup` - Create a new user
 - `POST /api/auth/login` - Authenticate user & get token
 - `GET /api/expenses` - Get all expenses with filters/pagination
