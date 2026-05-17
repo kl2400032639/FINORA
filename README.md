@@ -1,6 +1,6 @@
 # Finora v2 - Expense Management SaaS
 
-A premium, full-stack Expense Management SaaS built with the MERN stack (MongoDB, Express, React, Node.js).
+A full-stack expense tracking web application built using React, Node.js, Express, and MongoDB..
 
 ## Live Demo
 https://finora-frontend.netlify.app
@@ -8,12 +8,13 @@ https://finora-frontend.netlify.app
 Email: demo@finora.com
 Password: demo123
 
-##  Features
-- **Secure Authentication**: JWT-based login/signup with route protection.
-- **Dynamic Dashboard**: Financial overview, monthly budget tracking, and real-time balance.
-- **Expense Tracking**: Add, edit, delete, and categorize expenses.
-- **AI Insights**: Rule-based smart spending insights based on past history.
-- **Modern UI/UX**: Dark mode by default, glassmorphism UI, responsive design.
+## Features
+
+- User authentication
+- Expense tracking
+- Dashboard and analytics
+- Budget management
+- Responsive UI
 
 ##  Tech Stack
 - **Frontend**: React (Vite), React Router, Axios, CSS Modules (Custom Design System)
